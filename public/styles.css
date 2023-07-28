@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a4a891ab-c7b4-4202-ac09-8fdc935d7eca/d5q4tke-0b45ae79-ce01-4353-ad8b-1e7e337c885b.jpg/v1/fill/w_900,h_634,q_75,strp/yoda_vs_lil_dude_darth_vader_by_robert_shane_d5q4tke-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjM0IiwicGF0aCI6IlwvZlwvYTRhODkxYWItYzdiNC00MjAyLWFjMDktOGZkYzkzNWQ3ZWNhXC9kNXE0dGtlLTBiNDVhZTc5LWNlMDEtNDM1My1hZDhiLTFlN2UzMzdjODg1Yi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ItY43RaXymfoPf4GL2dQ-kGhKiZ-ErqtyAZmdv_qLak");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div {
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.user-inputs {
+  background-color: rgba(255,255,255, .9);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto 2fr;
+  grid-template-areas:
+    "header header header"
+    "add-quotes update-quote delete-quote"
+    "quotes quotes quotes";
+  gap: 1rem;
+}
+
+#quotes {
+  background-color: rgba(255,255,255, .9);
+  width: 100;
+}
+
+h1, h2 {
+  margin: 0;
+}
