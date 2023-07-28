@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
+const port = process.env.PORT || 3000;
 const MongoClient = require("mongodb").MongoClient;
 const connectionString = "mongodb+srv://zeddecastro02:do2Vsoj7B6QtP5Tu@cluster0.giqu5fa.mongodb.net/?retryWrites=true&w=majority";
 
@@ -69,8 +70,8 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         .catch((error) => console.error(error));
     });
 
-    app.listen(3000, function () {
-      console.log("listening on 3000");
+    app.listen(port, function () {
+      console.log(`listening on port ${port}`);
     });
 
   })
